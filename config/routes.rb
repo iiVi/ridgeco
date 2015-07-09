@@ -10,4 +10,13 @@ Rails.application.routes.draw do
   # Make available necessary 'contact' routes
   get 'contact' => 'contact#index'
   
+  # Make available necessary 'rental' routes
+  get 'rentals' => 'rentals#index'
+  
+  # Make available necessary 'sale' routes
+  get 'sales' => 'sales#index'
+  
+  # Make available necessary 'development' routes
+  get 'developments' => 'developments#index'
+  
 end
