@@ -1,0 +1,29 @@
+<p style="font-size:17px">
+"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+</p>
+<hr>
+<%=form_tag	do %>
+
+	<%= label_tag "Name" %>
+	<%= text_field_tag :name, placeholder: "Required" %>
+	<br>
+	<br>
+	<%= label_tag "Phone" %>
+	<%= telephone_field :phone, placeholder: "Required" %>
+	<br>
+	<br>
+	<%= label_tag "Email" %>
+	<%= email_field :email, placeholder: "Required" %>
+	<br>
+	<br>
+	<%= label_tag "Property ID" %>
+	<%= number_field :prop_id, placeholder: "Optional" %>
+	<br>
+	<br>
+	<%= label_tag "Message" %>
+	<%= text_area_tag :message, size: "24x24", placeholder: "How can we help?" %>
+	<br>
+	<br>
+	<%= submit_tag "Submit", :class=>"btn btn-success" %>
+
+<% end %>
